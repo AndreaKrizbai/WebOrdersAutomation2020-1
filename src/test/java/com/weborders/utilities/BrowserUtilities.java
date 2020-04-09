@@ -126,4 +126,8 @@ public class BrowserUtilities {
             }
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 185e3a7c5f52bdbdba0c89af3d934813a28a894f
