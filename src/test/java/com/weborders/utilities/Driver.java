@@ -9,9 +9,11 @@ public class Driver {
     private static ThreadLocal<WebDriver> driverPool = new ThreadLocal<>();
     //so no one can create object of Driver class
     //everyone should call static getter method instead
+
     private Driver() {
     }
-    public static WebDriver getDriver() {
+
+    public synchronized static WebDriver getDriver() {
         //if webdriver object doesn't exist
         //create it
         if (driverPool.get() == null) {
